@@ -1,0 +1,5 @@
+package com.example.appsaf.navigation
+
+const val ROUTE_HOME= "home"
+const val ROUTE_ABOUT= "about"
+const val ROUTE_SPLASH= "splash"
