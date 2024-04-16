@@ -14,6 +14,8 @@ import androidx.navigation.compose.rememberNavController
 import com.example.appsaf.ui.theme.AppSafTheme
 import com.example.appsaf.ui.theme.screens.about.About
 import com.example.appsaf.ui.theme.screens.home.Home
+import com.example.appsaf.ui.theme.screens.login.LoginScreen
+import com.example.appsaf.ui.theme.screens.registration.RegistrationScreen
 import com.example.appsaf.ui.theme.screens.splash.SplashScreen
 
 @Composable
@@ -29,6 +31,12 @@ fun AppNavHost(modifier: Modifier=Modifier,
         }
         composable(ROUTE_SPLASH){
             SplashScreen(navController)
+        }
+        composable(ROUTE_LOGIN){
+            LoginScreen(navController)
+        }
+        composable(ROUTE_REGISTER){
+            RegistrationScreen(navController)
         }
     }
     
